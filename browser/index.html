@@ -10,9 +10,11 @@
 	<script src="/angular-ui-router/release/angular-ui-router.js"></script>
 	<script src="/angular-messages/angular-messages.js"></script>
 	<script src="/js/module.js"></script>
+	<script src="/js/directives/sidebar.js"></script>
+	<script src="/js/directives/player.js"></script>
 	<script src="/js/controllers/album.js"></script>
 	<script src="/js/controllers/albums.js"></script>
-	<script src="/js/controllers/player.js"></script>
+<!-- 	// <script src="/js/controllers/player.js"></script> -->
 	<script src="/js/controllers/artist.js"></script>
 	<script src="/js/controllers/artists.js"></script>
 	<script src="/js/controllers/playlist-form.js"></script>
@@ -38,7 +40,7 @@
 
 		<div class="col-xs-2">
 			<sidebar>
-				<section>
+				<!-- <section>
 					<h4 ui-sref-active="active" class="playlist-item">
 						<a ui-sref="albums">ALBUMS</a>
 					</h4>
@@ -59,7 +61,7 @@
 					<p>
 						<a ui-sref="newPlaylist" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-plus"></span> PLAYLIST</a>
 					</p>
-				</section>
+				</section> -->
 			</sidebar>
 		</div>
 
@@ -68,7 +70,8 @@
 		</div>
 
 		<footer>
-			<div ng-controller="PlayerCtrl" ng-show="getCurrentSong()">
+			<player>
+<!-- 			<div ng-controller="PlayerCtrl" ng-show="getCurrentSong()">
 				<div class="pull-left">
 					<button ng-click="back()" class="btn btn-default">
 						<span class="glyphicon glyphicon-step-backward"></span>
@@ -86,7 +89,8 @@
 						<div class="progress-bar" ng-style="{width: getPercent()}"></div>
 					</div>
 				</div>
-			</div>
+			</div> -->
+			</player>
 		</footer>
 
 	</div>
