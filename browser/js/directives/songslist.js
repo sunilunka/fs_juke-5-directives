@@ -17,7 +17,7 @@ app.directive('songsList', function(PlayerFactory){
       };
 
       scope.start = function (song) {
-        console.log('line before player ')
+        console.log(scope)
         PlayerFactory.start(song, scope.songs);
       };
     }

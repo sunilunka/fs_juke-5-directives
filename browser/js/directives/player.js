@@ -2,6 +2,9 @@ app.directive("player", function(PlayerFactory){
   
   return {
     restrict: "E",
+    scope: {
+      song: '='
+    },
     templateUrl: "/templates/player.html",
     link: function(scope){
       scope.getCurrentSong = PlayerFactory.getCurrentSong;
